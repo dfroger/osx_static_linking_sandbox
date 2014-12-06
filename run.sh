@@ -4,7 +4,9 @@ for mk in \
     object.mk \
     lib_path.mk \
     static_flag.mk \
-    nested.mk
+    nested.mk \
+    gfortran.mk \
+    gfortran_deployment_target.mk
 do
     echo "================================"
     echo "$mk"

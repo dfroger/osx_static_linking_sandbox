@@ -50,3 +50,18 @@ clang: error: linker command failed with exit code 1 (use -v to see invocation)
 make: *** [main] Error 1
 rm -f *.o *.a main
 
+================================
+gfortran.mk
+================================
+gfortran -o main main.f90
+rm -f main
+
+================================
+gfortran_deployment_target.mk
+================================
+MACOSX_DEPLOYMENT_TARGET=10.5 gfortran -o main main.f90
+ld: library not found for -lcrt1.10.5.o
+collect2: error: ld returned 1 exit status
+make: *** [main] Error 1
+rm -f main
+
