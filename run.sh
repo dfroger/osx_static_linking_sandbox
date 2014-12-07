@@ -6,7 +6,8 @@ for mk in \
     static_flag.mk \
     nested.mk \
     gfortran.mk \
-    gfortran_deployment_target.mk
+    gfortran_deployment_target.mk \
+    gfortran_deployment_target_sdk.mk
 do
     echo "================================"
     echo "$mk"

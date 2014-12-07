@@ -65,3 +65,9 @@ collect2: error: ld returned 1 exit status
 make: *** [main] Error 1
 rm -f main
 
+================================
+gfortran_deployment_target_sdk.mk
+================================
+MACOSX_DEPLOYMENT_TARGET=10.5 gfortran -o main -L/Developer/SDKs/MacOSX10.5.sdk/usr/lib main.f90
+rm -f main
+
